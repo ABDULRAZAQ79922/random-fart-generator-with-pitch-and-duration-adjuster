@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Fart Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Fart Generator</h1>
+        <button id="generateButton">Generate Fart</button>
+        <audio id="fartSound">
+            <source src="fart.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0.5" max="2" step="0.1" value="1">
+            <br>
+            <label for="duration">Duration:</label>
+            <input type="range" id="duration" min="0.5" max="5" step="0.5" value="2">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
